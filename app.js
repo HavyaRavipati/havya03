@@ -4,7 +4,7 @@ const logger = require("morgan")
 const bodyParser = require("body-parser")
 const fs = require('fs')  // NEW - this is required
 const app = express()  // make express app
-const port = 8081
+const port = process.env.PORT || 8081
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE
 // 1 set up the view engine
